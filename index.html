@@ -5,19 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Promogim</title>
   </head>
   <body>
     <div class="layout-with-centered-content">
       <div class="main-container">
+        <!-- Header Section -->
         <div class="head-section">
+          <!-- Left Section -->
           <div class="left-section">
             <div class="logo">
               <img class="logo-site" src="assets/logo.svg" alt="logo" />
             </div>
             <div class="housing">
               <div class="title-housing"><p>Villemomble (93)</p></div>
-
               <div class="address-housing">
                 <div class="content">
                   <img src="assets/map.svg" alt="map" />
@@ -25,10 +32,8 @@
                 </div>
               </div>
             </div>
-
             <div class="description-housing">
               <div class="size-housing"><p>Du studio au 4 pièces</p></div>
-
               <div class="prize-housing">
                 <div class="content">
                   <p id="small-p-content">à partir de</p>
@@ -37,11 +42,10 @@
               </div>
             </div>
           </div>
-
+          <!-- Right Section  -->
           <div class="right-section">
             <div class="grid-1">
               <div class="delivry-information">
-                <!-- <img src="assets/perspective.jpg" alt="perspective" /> -->
                 <div class="information-left-bottom-timer">
                   <div class="content">
                     <img src="assets/timer.svg" alt="timer" />
@@ -52,14 +56,106 @@
             </div>
             <div class="grid-2">
               <div class="works-information">
-                <!-- <img src="assets/perspective.jpg" alt="perspective" /> -->
                 <div class="information-right-top-works">
                   <div class="content">
-                    <!-- <img src="assets/timer.svg" alt="timer" /> -->
                     <p>Travaux en cours</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mid Section -->
+        <div class="mid-section">
+          <!--Housing Description / Text Area-->
+          <div class="text-area-information">
+            <p class="title-description">
+              Villa Coquetiers : Un emplcement tranquille, pratique et
+              accessible à 300m* du tramway
+            </p>
+            <div class="check-list-description">
+              <div id="check-list">
+                <div id="check"><img src="assets/check.svg" alt="check" /></div>
+                <p>A 300m du tram</p>
+              </div>
+              <div id="check-list">
+                <div id="check"><img src="assets/check.svg" alt="check" /></div>
+                <p>Quartier des Coquetiers</p>
+              </div>
+              <div id="check-list">
+                <div id="check"><img src="assets/check.svg" alt="check" /></div>
+                <p>Proche des commerces et services</p>
+              </div>
+            </div>
+            <p id="description">
+              Dans le quartier pavillonnaire des Coquetiers, la résidence prend
+              place à proximité des commerces, services et établissements
+              scolaires. La gare du RER E se rejoint facilement par le tram
+              situé à 4 minutes* seulement de la résidence.
+            </p>
+            <p id="description">
+              Entourée d’un jardn, Villa Coquetiers s’élève sur 2 bâtiments
+              composés d’un nombre réduit d’appartements lumineux s’ouvrant sur
+              des baies vitrées donnant sur un balcon, une terrasse ou une
+              loggia.
+            </p>
+          </div>
+          <!-- Informative Form -->
+          <div class="grid-form">
+            <div class="message-info-form">
+              <div class="title-form">
+                <p>Devenez propriétaire à Villemomble</p>
+              </div>
+              <form action="submit" method="POST">
+                <!-- Gender Input Declaration  -->
+                <div class="gender-selection">
+                  <p>Civitilité*</p>
+
+                  <div class="gender-input-radio">
+                    <input type="radio" name="man" id="man-gender" />
+                    <label for="man-gender">Madame</label>
+                  </div>
+
+                  <div class="gender-input-radio">
+                    <input type="radio" name="female" id="man-gender" />
+                    <label for="man-gender">Monsieur</label>
+                  </div>
+                </div>
+                <!-- Personal Information Input Declaration  -->
+                <div class="personal-information">
+                  <input type="text" id="last-name" placeholder="Nom*" />
+                  <input type="text" id="first-name" placeholder="Prénom*" />
+                  <div class="numeric-personal-information">
+                    <input type="tel" id="phone" placeholder="Téléphone*" />
+                    <input
+                      type="text"
+                      id="zip-code"
+                      placeholder="Code postal*"
+                    />
+                  </div>
+                  <input type="mail" id="mail" placeholder="E-mail*" />
+                </div>
+                <!-- Wish Input Declaration  -->
+                <div class="wish-selection">
+                  <p>Je souhaite*</p>
+                  <div class="wish-input-radio">
+                    <input type="radio" name="live" id="live-wish" />
+                    <label for="live-wish">Habiter</label>
+                  </div>
+                  <div class="wish-input-radio">
+                    <input type="radio" name="invest" id="invest-wish" />
+                    <label for="invest-wish">Investir</label>
+                  </div>
+                </div>
+                <!-- Message Text Area Declaration  -->
+                <div class="message-text-area">
+                  <textarea
+                    name="message"
+                    id="message-area"
+                    placeholder="Votre message"
+                  ></textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
