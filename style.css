@@ -108,7 +108,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 10% 0 0 0;
+  margin: 15% 0 0 0;
   justify-content: flex-start;
 }
 
@@ -155,6 +155,7 @@ body {
   font-weight: var(--font-weight-bold);
   color: var(--dark-blue-color);
   text-align: left;
+  margin: 10% 0 0 0;
 }
 
 .prize-housing .content {
@@ -164,25 +165,32 @@ body {
   flex-direction: column;
   width: fit-content;
   padding: 0 5% 0 5%;
+  margin: 2% 0 30% 0;
 }
 
 .prize-housing .content #small-p-content {
   color: white;
-  margin: 8% 0 0 0;
+  margin: 8% 4% 0 4%;
   font-size: var(--font-size-xxxs);
 }
 
 .prize-housing .content #big-p-content {
   color: white;
-  margin: 0 0 8% 0;
+  margin: 0 8% 8% 4%;
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-bold);
 }
 
-.delivry-information {
+.right-section {
   background-image: url(assets/perspective.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 1px black;
+}
+
+.delivry-information {
   display: flex;
   justify-content: flex-start;
   align-items: end;
@@ -190,24 +198,41 @@ body {
   height: 100%;
 }
 
-.information-left-bottom-timer .content {
+.information-left-bottom-timer {
   margin: 0 0 4% 8%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: var(--light-blue-color);
-  padding: 0 2% 0 2%;
+  padding: 2%;
   width: fit-content;
 }
 
-.information-left-bottom-timer p {
-  font-size: var(--font-size-xxxs);
-  margin: 2%;
+.information-left-bottom-timer .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.information-left-bottom-timer p,
+.information-right-top-works p {
+  font-size: var(--font-size-xxs);
   color: white;
 }
 
 .information-left-bottom-timer img {
   width: 1em;
   height: 1em;
+  margin: 4%;
+}
+
+.works-information {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  width: auto;
+  height: 100%;
+}
+
+.information-right-top-works {
+  margin: 4% 12% 0 0;
+  background-color: var(--red-color-primary);
+  padding: 0.5% 4% 0.5% 4%;
 }
