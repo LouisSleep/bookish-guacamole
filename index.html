@@ -107,43 +107,79 @@
                 <p>Devenez propriétaire à Villemomble</p>
               </div>
               <form action="submit" method="POST">
-                <!-- Gender Input Declaration  -->
+                <!-- Gender Radio Input Declaration  -->
                 <div class="gender-selection">
-                  <p>Civitilité*</p>
+                  <p>Civilité*</p>
 
                   <div class="gender-input-radio">
-                    <input type="radio" name="man" id="man-gender" />
+                    <input
+                      type="radio"
+                      name="man"
+                      id="man-gender"
+                      required="required"
+                    />
                     <label for="man-gender">Madame</label>
                   </div>
 
                   <div class="gender-input-radio">
-                    <input type="radio" name="female" id="man-gender" />
+                    <input
+                      type="radio"
+                      name="female"
+                      id="man-gender"
+                      required="required"
+                    />
                     <label for="man-gender">Monsieur</label>
                   </div>
                 </div>
-                <!-- Personal Information Input Declaration  -->
+                <!-- Personal Information Various Input  Declaration  -->
                 <div class="personal-information">
-                  <input type="text" id="last-name" placeholder="Nom*" />
-                  <input type="text" id="first-name" placeholder="Prénom*" />
+                  <input
+                    type="text"
+                    id="last-name"
+                    placeholder="Nom*"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="first-name"
+                    placeholder="Prénom*"
+                    required
+                  />
                   <div class="numeric-personal-information">
-                    <input type="tel" id="phone" placeholder="Téléphone*" />
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="Téléphone*"
+                      required
+                    />
                     <input
                       type="text"
                       id="zip-code"
                       placeholder="Code postal*"
+                      required
                     />
                   </div>
-                  <input type="mail" id="mail" placeholder="E-mail*" />
+                  <input type="mail" id="mail" placeholder="E-mail*" required />
                 </div>
-                <!-- Wish Input Declaration  -->
+                <!-- Wish Radio  Input Declaration  -->
                 <div class="wish-selection">
                   <p>Je souhaite*</p>
                   <div class="wish-input-radio">
-                    <input type="radio" name="live" id="live-wish" />
+                    <input
+                      type="radio"
+                      name="live"
+                      id="live-wish"
+                      required="required"
+                    />
                     <label for="live-wish">Habiter</label>
                   </div>
                   <div class="wish-input-radio">
-                    <input type="radio" name="invest" id="invest-wish" />
+                    <input
+                      type="radio"
+                      name="invest"
+                      id="invest-wish"
+                      required="required"
+                    />
                     <label for="invest-wish">Investir</label>
                   </div>
                 </div>
@@ -155,8 +191,68 @@
                     placeholder="Votre message"
                   ></textarea>
                 </div>
+                <!-- Commercial Checkbox Input  Declaration  -->
+                <div class="commercial-selection">
+                  <input
+                    type="checkbox"
+                    name="commercial-selection"
+                    id="commercial-selection"
+                  />
+                  <label for="commercial-selection"
+                    >En cochant cette case, je consens à recevoir des offres
+                    commerciales et des informations sur les produits et
+                    services de Promogim -
+                    <a id="legal-mention" href="#"
+                      >Mention sur La protection des données personnelles</a
+                    ></label
+                  >
+                </div>
+                <!-- Submit Input Declaration  -->
+                <div class="submit-form-button">
+                  <button id="submit-button">
+                    <div class="submit-button-content">
+                      <div class="arrow-svg-circle">
+                        <img src="assets/arrow.svg" alt="arrow" />
+                      </div>
+                      <p>Envoyer mon messages</p>
+                    </div>
+                  </button>
+                  <span id="required-fields">*Champs obligatoires</span>
+                </div>
               </form>
             </div>
+          </div>
+        </div>
+        <!-- Mid Content -->
+        <div class="visuel-mid-content">
+          <div class="visuel-img">
+            <img src="assets/visuel.jpg" alt="visuel" />
+          </div>
+        </div>
+
+        <!-- Footer-->
+        <div class="footer">
+          <div class="footer-content">
+            <p>
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id
+              nibh ultricies vehicula ut id elit. Maecenas faucibus mollis
+              interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at
+              eros. Cras mattis consectetur purus sit amet fermentum. Nullam
+              quis risus eget urna mollis ornare vel eu leo. Maecenas sed diam
+              eget risus varius blandit sit amet non magna. Vivamus sagittis
+              lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed
+              odio dui. Sed posuere consectetur est at lobortis. Fusce dapibus,
+              tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+              fermentum massa justo sit amet risus. Nullam id dolor id nibh
+              ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.
+              Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras
+              mattis consectetur purus sit amet fermentum. Nullam quis risus
+              eget urna mollis ornare vel eu leo. Maecenas sed diam eget risus
+              varius blandit sit amet non magna. Vivamus sagittis lacus vel
+              augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.
+              Sed posuere consectetur est at lobortis.
+            </p>
           </div>
         </div>
       </div>
