@@ -395,9 +395,7 @@ input[type="radio"] {
 }
 
 .commercial-selection input[type="checkbox"] {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
-  transform: scale(1.5);
+  accent-color: var(--dark-blue-color);
 }
 
 .commercial-selection input,
@@ -505,13 +503,12 @@ input[type="radio"] {
   .right-section {
     background-image: url(assets/perspective.jpg);
     background-size: 1200px 650px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-/* Mobile Responsive */
 
+/* Mobile Responsive */
 @media screen and (max-width: 640px) {
   .head-section {
     display: grid;
