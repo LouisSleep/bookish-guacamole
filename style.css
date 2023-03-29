@@ -20,6 +20,7 @@
   --dark-blue-color: #002a5c;
 
   --margin-mobile-page: 1.5em;
+  --margin-desktop-page: 6em;
 }
 
 body {
@@ -41,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   width: auto;
-  margin: 0 0 10% 96px;
+  margin: 0 0 10% var(--margin-desktop-page);
 }
 
 .logo {
@@ -86,6 +87,7 @@ body {
   flex-direction: row;
   width: fit-content;
   padding: 0 2% 0 2%;
+  margin: 2% 0 0 0;
 }
 
 .address-housing .content p {
@@ -203,7 +205,7 @@ body {
 }
 
 .text-area-information {
-  margin: 2.5% 0 0 96px;
+  margin: 2.5% 0 0 var(--margin-desktop-page);
 }
 .text-area-information .title-description {
   font-size: var(--font-size-m);
@@ -461,7 +463,7 @@ input[type="radio"] {
 .visuel-mid-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 0 0 96px;
+  margin: 0 0 0 var(--margin-desktop-page);
 }
 
 .visuel-mid-content .visuel-img img {
@@ -474,7 +476,7 @@ input[type="radio"] {
 /* Footer */
 
 .footer {
-  margin: 0 96px 0 96px;
+  margin: 5% 96px 5% var(--margin-desktop-page);
 }
 .footer-content p {
   font-size: var(--font-size-xxs);
@@ -539,7 +541,7 @@ input[type="radio"] {
   }
 
   .right-section .works-information {
-    width: 7em;
+    width: 100%;
   }
 
   .mid-section {
