@@ -137,7 +137,7 @@ body {
 
 .right-section {
   background-image: url(assets/perspective.jpg);
-  background-size: 100% 800px;
+  background-size: 100% 100%;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -497,15 +497,6 @@ input[type="radio"] {
   color: var(--dark-blue-color);
   margin: 5% 0 5% 0;
   word-break: break-word;
-}
-
-@media screen and (max-width: 1980px) {
-  .right-section {
-    background-image: url(assets/perspective.jpg);
-    background-size: 1200px 650px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 /* Mobile Responsive */
