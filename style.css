@@ -459,7 +459,8 @@ input[type="radio"] {
   color: white;
 }
 
-/* Mid Content*/
+/*Mid Visual Content*/
+
 .visuel-mid-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -476,13 +477,14 @@ input[type="radio"] {
 /* Footer */
 
 .footer {
-  margin: 5% 96px 5% var(--margin-desktop-page);
+  margin: 5% var(--margin-desktop-page) 5% var(--margin-desktop-page);
 }
 .footer-content p {
   font-size: var(--font-size-xxs);
   font-weight: var(--font-size-body);
   color: var(--dark-blue-color);
   margin: 5% 0 5% 0;
+  word-break: break-word;
 }
 
 /* Mobile Responsive */
@@ -499,7 +501,7 @@ input[type="radio"] {
     margin: 10% 0 10% 0;
     justify-content: center;
     align-items: center;
-    /* grid-row: 2; */
+    padding: 0 var(--margin-mobile-page) 0 var(--margin-mobile-page);
   }
 
   .logo {
@@ -511,6 +513,11 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
   }
+
+  .housing .title-housing p {
+    text-align: center;
+  }
+
   .description-housing {
     margin: 10% 0 0 0;
   }
@@ -525,6 +532,13 @@ input[type="radio"] {
     width: 100%;
   }
 
+  .description-housing .size-housing p {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-blue-color);
+    text-align: left;
+    /* margin: 10% 0 0 0; */
+  }
   .prize-housing .content {
     padding: 0 5% 0 5%;
     margin: 2% 0 10% 0;
@@ -601,5 +615,9 @@ input[type="radio"] {
     height: 75%;
     width: 75%;
     box-shadow: 12.5px 12.5px 0px var(--dark-blue-color);
+  }
+
+  .footer {
+    margin: 5% var(--margin-mobile-page) 5% var(--margin-mobile-page);
   }
 }
