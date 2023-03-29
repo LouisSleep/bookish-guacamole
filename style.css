@@ -18,6 +18,8 @@
   --red-color-secondary: #fff6f7;
   --light-blue-color: #145a97;
   --dark-blue-color: #002a5c;
+
+  --margin-mobile-page: 1.5em;
 }
 
 body {
@@ -492,38 +494,89 @@ input[type="radio"] {
 
   .left-section {
     display: flex;
-    /* justify-content: flex-start;
-    align-items: flex-start; */
+    margin: 10% 0 10% 0;
+    justify-content: center;
+    align-items: center;
     /* grid-row: 2; */
+  }
+
+  .logo {
+    margin: 6.4% 0 5% 0;
+  }
+  .housing {
+    margin: 15% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .description-housing {
+    margin: 10% 0 0 0;
+  }
+  .description-housing .size-housing p {
+    margin: 10% 0 0 0;
+  }
+
+  .address-housing .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .prize-housing .content {
+    padding: 0 5% 0 5%;
+    margin: 2% 0 10% 0;
   }
 
   .right-section {
-    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 20em;
+  }
+
+  .right-section .delivry-information {
+    width: 15em;
+  }
+
+  .right-section .works-information {
+    width: 7em;
   }
 
   .mid-section {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    margin: 0;
+    margin: var(--margin-mobile-page);
   }
 
   .grid-form .message-info-form {
-    /* grid-row: 2; */
-    width: 75%;
-    /* position: relative; */
+    width: 85%;
+    margin: var(--margin-mobile-page) 0 var(--margin-mobile-page) 0;
     z-index: 2;
     top: 0;
   }
 
+  .submit-button-content p {
+    font-size: var(--font-size-xs);
+  }
+
+  .arrow-svg-circle {
+    width: 2em;
+    height: 2em;
+  }
+
+  .submit-button-content .arrow-svg-circle img {
+    width: 1em;
+    height: 1em;
+  }
+
   .commercial-selection label {
-    width: 20em;
+    width: 100%;
   }
   .commercial-selection input,
   .commercial-selection label {
-    margin: 1%;
+    margin: 2.5%;
+    padding: 2.5%;
   }
 
   .text-area-information {
@@ -533,15 +586,18 @@ input[type="radio"] {
   .visuel-mid-content {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 15% ;
+    margin: 10% 0 10% 0;
+  }
+  .visuel-mid-content .visuel-img {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
   }
 
   .visuel-mid-content .visuel-img img {
-    height: 100%;
-    width: 100%;
-    /* box-shadow: 35px 35px 0px var(--dark-blue-color); */
-    /* margin: 2.5% 0 10% 0; */
+    height: 75%;
+    width: 75%;
+    box-shadow: 12.5px 12.5px 0px var(--dark-blue-color);
   }
-
-
 }
