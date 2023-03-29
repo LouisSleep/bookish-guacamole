@@ -137,7 +137,8 @@ body {
 
 .right-section {
   background-image: url(assets/perspective.jpg);
-  background-size: 1400px 700px;
+  background-size: 100% 800px;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -346,7 +347,7 @@ input[type="radio"] {
 .message-text-area {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+
   height: auto;
 }
 
@@ -388,6 +389,17 @@ input[type="radio"] {
 .commercial-selection label {
   width: 35em;
 }
+.commercial-selection input {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.commercial-selection input[type="checkbox"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+
 .commercial-selection input,
 .commercial-selection label {
   margin: 1%;
@@ -489,6 +501,15 @@ input[type="radio"] {
   word-break: break-word;
 }
 
+@media screen and (max-width: 1980px) {
+  .right-section {
+    background-image: url(assets/perspective.jpg);
+    background-size: 1200px 650px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* Mobile Responsive */
 
 @media screen and (max-width: 640px) {
@@ -563,7 +584,6 @@ input[type="radio"] {
   .right-section .works-information {
     width: 100%;
     grid-column: 1;
-
   }
 
   .right-section .works-information .information-right-top-works {
